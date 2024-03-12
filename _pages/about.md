@@ -6,10 +6,10 @@ redirect_from:
   - /about/
   - /about.html
 ---
-- Hi! I'm master student in Information Science, working on machine learning.
+- Hi! I'm 1st-year Master student in Information Science, working on machine learning.
 - I’m interested in Natural Language Processing and other related technologies.
 - I'm currently focusing specifically on efficient training methods for large
-language models
+language models.
 
 ---
 ## Education
@@ -20,6 +20,7 @@ language models
 * Summer 2023: Research Intern
   * LINE Corporation
   * Focused on research on large language models, specifically adversarial attacks against language models.
+  * see [achievement](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-14.pdf)
 
   
 ## Skills
@@ -32,7 +33,7 @@ language models
 ## Publication
 ### Domestic Conference
 - **矢野一樹**, ジェプカ ラファウ, 荒木健治. 日本語知識グラフを用いた質問応答システムの構築とグラフサイズ
-の影響の検証. 情報処理学会 第255回自然言語処理研究会, 沖縄,2023年3月. (口頭)
-- **矢野一樹**, (東北大学), 綿岡晃輝, Thien Q. Tran, 髙橋翼, Seng Pei Liew (LINEヤフー), 鈴木潤 (東北大/理研)
+の影響の検証. 情報処理学会 第255回自然言語処理研究会, 沖縄,2023年3月. 
+- **矢野一樹**, (東北大学), 綿岡晃輝, Thien Q. Tran, 髙橋翼, Seng Pei Liew (LINEヤフー), 鈴木潤 (東北大/理研). 対話モデルに対する敵対的プロンプトの効率的な最適化. 言語処理学会第30回年次大会, 神戸, 2024年3月. 
 
 ## Awards
