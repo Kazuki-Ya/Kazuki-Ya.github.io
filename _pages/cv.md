@@ -25,17 +25,14 @@ Skills
 ======
 * Python: fluent
 * Rust: intermediate
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
 * Statistics/Data Science
   * Level 1 Certificate in Mathematical Statistics, Japan
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 <!-- Talks
 ======

@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Kazuki Yano"
   pronouns         : # example: "she/her"  
-  bio              : "I'm interested in large language models (LLM), specifically efficient training methods for LLM."
+  bio              : 
   location         : "Japan"
   employer         : 
   uri              : # URL
