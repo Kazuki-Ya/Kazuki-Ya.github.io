@@ -40,4 +40,4 @@ language models.
 ## Awards
 - [言語処理学会第30回年次大会(NLP2024), 若手奨励賞](https://www.anlp.jp/nlp2024/award.html#P6-14) March 2024
 
-対話モデルに対する敵対的プロンプトの効率的な最適化
+  対話モデルに対する敵対的プロンプトの効率的な最適化
