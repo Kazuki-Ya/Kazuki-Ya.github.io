@@ -18,8 +18,7 @@ language models.
 * B.S. in Information Science, Hokkaido University, 2023
 
 ## Work experience
-* Summer 2023: Research Intern
-  * LINE Corporation
+* Summer 2023: Research Intern　at LINE Corporation
   * Focused on research on large language models, specifically adversarial attacks against language models.
   * see [achievement](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-14.pdf)
 
