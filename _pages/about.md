@@ -29,18 +29,12 @@ language models.
   * Focused on research on large language models, specifically adversarial attacks against language models.
   * see [achievement](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-14.pdf)
 
-  
-## Skills
-* Python: fluent
-* Rust: intermediate
-* Statistics/Data Science
-  * Level 1 Certificate in Mathematical Statistics, Japan
-
-
 ## Publication
+
 ### International Conference (Referred)
 - **Kazuki Yano**, Takumi Ito, Jun Suzuki. STEP: Staged Parameter-Efficient Pre-training for Large Language Models.
 Non-archival submission for ACL Student Research Workshop (ACL-SRW 2024) August 2024.
+
 ### Domestic Conference
 - **矢野一樹**, ジェプカ ラファウ, 荒木健治. 日本語知識グラフを用いた質問応答システムの構築とグラフサイズ
 の影響の検証. 情報処理学会 第255回自然言語処理研究会, 沖縄,2023年3月. 
@@ -49,3 +43,9 @@ Non-archival submission for ACL Student Research Workshop (ACL-SRW 2024) August 
 ## Awards
 - [言語処理学会第30回年次大会(NLP2024), 若手奨励賞](https://www.anlp.jp/nlp2024/award.html#P6-14) March 2024
   対話モデルに対する敵対的プロンプトの効率的な最適化
+
+## Skills
+* Python: fluent
+* Rust: intermediate
+* Statistics/Data Science
+  * Level 1 Certificate in Mathematical Statistics, Japan
