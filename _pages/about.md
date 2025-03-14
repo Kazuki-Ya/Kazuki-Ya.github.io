@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-- Kazuki Yano is 2nd-year Master student in Information Science, working on machine learning at [Tohoku NLP](https://www.nlp.ecei.tohoku.ac.jp/).
+- Kazuki Yano is a 2nd-year Master's student in Information Science, working on machine learning at [Tohoku NLP](https://www.nlp.ecei.tohoku.ac.jp/).
 - I’m interested in Natural Language Processing (NLP) and other related technologies.
 - I'm focusing on efficient training methods for large
 language models.
@@ -53,8 +53,9 @@ language models.
 の影響の検証. 情報処理学会 第255回自然言語処理研究会, March 2023. 
 
 ## Awards
-- [言語処理学会第30回年次大会(NLP2024), 若手奨励賞](https://www.anlp.jp/nlp2024/award.html#P6-14) March 2024
-  対話モデルに対する敵対的プロンプトの効率的な最適化
+- [言語処理学会第31回年次大会(NLP2025), 優秀賞](https://arc.net/l/quote/kelkrwml). Rate 上位14/765件
+- [言語処理学会第31回年次大会(NLP2025), 若手奨励賞(共著)](https://arc.net/l/quote/zmgklkby). Rate 上位20/487件
+- [言語処理学会第30回年次大会(NLP2024), 若手奨励賞](https://www.anlp.jp/nlp2024/award.html#P6-14). Rate 上位18/427件
 
 ## Skills
 * Python: fluent
