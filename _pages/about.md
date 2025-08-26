@@ -23,15 +23,15 @@ language models.
 * April 2024 - Present: [Graduate Program in Data Science](https://gp-ds.tohoku.ac.jp/en/index.html)
   * Research Assistant.
 * August 2023 - September 2023: LINE Corporation
-  * Reseach Intern.
+  * Research Intern.
   * Focused on research on large language models, specifically adversarial attacks against language models.
   * see [achievement](https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-14.pdf)
 
 # Publication
 ## International Conference
 ### 2025
-- **Kazuki Yano**, Sho Takase, Sosuke Kobayashi, Shun Kiyono, Jun Suzuki. Efficient Construction of Model Family through Progressive Training Using Model Expansion. In Proceedings of Conference on Language Modeling (COLM) 2025, October. [arxiv](https://arxiv.org/abs/2504.00623).
-- Wataru Ikeda, **Kazuki Yano**, Ryosuke Takahashi, Jaesung Lee, Keigo Shibata, Jun Suzuki. Layer-wise Importance Analysis of Feed-Forward Networks in Transformer-based Language Models. In Proceedings of Conference on Language Modeling (COLM), October 2025.
+- **Kazuki Yano**, Sho Takase, Sosuke Kobayashi, Shun Kiyono, Jun Suzuki. Efficient Construction of Model Family through Progressive Training Using Model Expansion. In Proceedings of Conference on Language Modeling (COLM), October 2025. [arxiv](https://arxiv.org/abs/2504.00623).
+- Wataru Ikeda, **Kazuki Yano**, Ryosuke Takahashi, Jaesung Lee, Keigo Shibata, Jun Suzuki. Layer-wise Importance Analysis of Feed-Forward Networks in Transformer-based Language Models. In Proceedings of Conference on Language Modeling (COLM), October 2025. [arxiv](https://arxiv.org/abs/2508.17734)
 - **Kazuki Yano**, Takumi Ito, Jun Suzuki.  STEP: Staged Parameter-Efficient Pre-training for Large Language Models. Proceedings of the 2025 Conference of the Nations of American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2025), April 2025. [link](https://aclanthology.org/2025.naacl-short.32/).
 ### 2024
 - Keito Kudo, Hiroyuki Deguchi, Makoto Morishita, Ryo Fujii, Takumi Ito, Shintaro Ozaki, Koki Natsumi, Kai Sato, **Kazuki Yano**, Ryosuke Takahashi, Subaru Kimura, Tomomasa Hara, Yusuke Sakai, Jun Suzuki. Document-level Translation with LLM Reranking: Team-J at WMT 2024 General Translation Task. In Proceedings of the Ninth Conference on Machine Translation, November 2024. [link](https://aclanthology.org/2024.wmt-1.14/)
