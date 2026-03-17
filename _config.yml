@@ -8,7 +8,8 @@ author:
   email: "yano.kazuki@dc.tohoku.ac.jp"
   github: "Kazuki-Ya"
   twitter: "kyano__nlp"
-  google_scholar: "KnttZUwAAAAJ"  # Google Scholar user ID を入れる（URLの ?user=XXXXX の部分）
+  google_scholar: "KnttZUwAAAAJ"
+  linkedin: "kazuki-yano"  # LinkedIn の /in/XXXXX の部分
 
 markdown: kramdown
 kramdown:
