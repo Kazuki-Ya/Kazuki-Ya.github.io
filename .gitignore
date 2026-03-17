@@ -3,5 +3,6 @@ Gemfile.lock
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.DS_Store
 vendor/
 memo.md
