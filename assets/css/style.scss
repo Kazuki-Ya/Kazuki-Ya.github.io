@@ -1,0 +1,379 @@
+---
+---
+
+// Colors
+$bg: #ffffff;
+$text: #1a1a1a;
+$subtext: #666666;
+$accent: #2563eb;
+$border: #e5e7eb;
+$code-bg: #f9fafb;
+
+// Reset
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Base
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: $text;
+  background: $bg;
+  line-height: 1.7;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Layout
+.main-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+// Header — right-aligned nav links
+.site-header {
+  border-bottom: 1px solid $border;
+}
+
+.nav-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.75rem;
+  a {
+    color: $subtext;
+    font-size: 0.95rem;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+    &.active {
+      color: $accent;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid $border;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  color: $subtext;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  a {
+    color: $subtext;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+// Hero — bio + photo side by side
+.hero {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-affiliation {
+  color: $subtext;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-bio {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.hero-contact {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.85rem;
+  color: $subtext;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  text-align: center;
+  img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  a {
+    display: inline-flex;
+    color: $subtext;
+    transition: color 0.15s;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
+    }
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+// News table
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  tr {
+    border-bottom: 1px solid $border;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  td {
+    padding: 0.6rem 0;
+    vertical-align: top;
+  }
+}
+
+.news-date {
+  width: 120px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: $text;
+}
+
+// Typography
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: $text;
+}
+
+h1 { font-size: 1.75rem; margin-bottom: 1rem; }
+h2 { font-size: 1.4rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+p { margin-bottom: 1rem; }
+
+hr {
+  border: none;
+  border-top: 1px solid $border;
+  margin: 2rem 0;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+// Page layout
+.page h1 {
+  margin-bottom: 1.5rem;
+}
+
+// Publications
+.pub-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: $text;
+}
+
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid $border;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+// Awards
+.awards-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.awards-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid $accent;
+  font-size: 0.92rem;
+}
+
+// Blog list
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid $border;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.post-list-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  a {
+    color: $text;
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.post-list-date {
+  font-size: 0.85rem;
+  color: $subtext;
+}
+
+.post-list-excerpt {
+  font-size: 0.92rem;
+  color: $subtext;
+  margin-top: 0.25rem;
+}
+
+// Post
+.post-header {
+  margin-bottom: 2rem;
+  time {
+    color: $subtext;
+    font-size: 0.9rem;
+  }
+}
+
+.post-content {
+  h2 { margin-top: 2.5rem; }
+  h3 { margin-top: 2rem; }
+}
+
+// Code
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88rem;
+  background: $code-bg;
+  padding: 0.15rem 0.35rem;
+  border-radius: 3px;
+}
+
+pre {
+  background: $code-bg;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  code {
+    padding: 0;
+    background: none;
+  }
+}
+
+// CV iframe
+.cv-frame {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid $border;
+  border-radius: 6px;
+}
+
+// Responsive
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+  .hero-photo img {
+    width: 140px;
+  }
+  .hero-name {
+    font-size: 2rem;
+  }
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+  .nav-container {
+    padding: 0.75rem 1rem;
+    justify-content: center;
+  }
+  .nav-links {
+    gap: 1.25rem;
+  }
+  h1 { font-size: 1.5rem; }
+  .news-date {
+    width: 90px;
+    font-size: 0.85rem;
+  }
+  .news-table {
+    font-size: 0.88rem;
+  }
+}
