@@ -1,11 +1,30 @@
 <header class="site-header">
+  {% assign current_lang = page.lang | default: 'en' %}
   <nav class="nav-container">
     <div class="nav-links">
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>home</a>
-      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>about</a>
-      <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active"{% endif %}>publications</a>
-      <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} class="active"{% endif %}>cv</a>
-      <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} class="active"{% endif %}>blog</a>
+      {% if current_lang == 'ja' %}
+        <a href="{{ '/ja/' | relative_url }}"{% if page.url == '/ja/' %} class="active"{% endif %}>ホーム</a>
+        <a href="{{ '/ja/about/' | relative_url }}"{% if page.url == '/ja/about/' %} class="active"{% endif %}>プロフィール</a>
+        <a href="{{ '/ja/publications/' | relative_url }}"{% if page.url == '/ja/publications/' %} class="active"{% endif %}>発表文献</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} class="active"{% endif %}>CV</a>
+      {% else %}
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>home</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>about</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active"{% endif %}>publications</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} class="active"{% endif %}>cv</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' %} class="active"{% endif %}>blog</a>
+      {% endif %}
+    </div>
+    <div class="lang-switch" aria-label="Language">
+      {% if current_lang == 'ja' %}
+        <a href="{{ page.translation_url | default: '/' | relative_url }}">EN</a>
+        <span>/</span>
+        <a class="active" href="{{ page.url | relative_url }}">JA</a>
+      {% else %}
+        <a class="active" href="{{ page.url | relative_url }}">EN</a>
+        <span>/</span>
+        <a href="{{ page.translation_url | default: '/ja/' | relative_url }}">JA</a>
+      {% endif %}
     </div>
   </nav>
 </header>
