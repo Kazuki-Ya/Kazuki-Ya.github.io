@@ -44,7 +44,7 @@ img {
 
 // Layout
 .main-content {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
 }
@@ -55,7 +55,7 @@ img {
 }
 
 .nav-container {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
@@ -110,7 +110,7 @@ img {
 }
 
 .footer-container {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem;
   text-align: center;
@@ -134,7 +134,7 @@ img {
 // Hero — bio + photo side by side
 .hero {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: flex-start;
   margin-bottom: 2.5rem;
 }
@@ -147,8 +147,9 @@ img {
 .hero-name {
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
 }
 
 .hero-affiliation {
@@ -173,7 +174,7 @@ img {
   flex-shrink: 0;
   text-align: center;
   img {
-    width: 200px;
+    width: 176px;
     height: auto;
     border-radius: 8px;
   }
@@ -223,6 +224,15 @@ img {
   color: $text;
 }
 
+.news-table .news-date {
+  padding-right: 1.25rem;
+}
+
+.news-archive-link {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+
 // Typography
 h1, h2, h3, h4 {
   font-weight: 700;
@@ -254,6 +264,41 @@ li {
 // Page layout
 .page h1 {
   margin-bottom: 1.5rem;
+}
+
+.page > section:first-of-type h2 {
+  margin-top: 0;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: grid;
+    grid-template-columns: 175px minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.experience-date {
+  color: $subtext;
+  font-size: 0.85rem;
+  padding-top: 0.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.experience-title {
+  display: block;
+  font-weight: 600;
+}
+
+.experience-detail {
+  display: block;
+  color: $subtext;
+  font-size: 0.92rem;
 }
 
 // Publications
@@ -401,6 +446,13 @@ pre {
     border-left: 0;
   }
   h1 { font-size: 1.5rem; }
+  .experience-list li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .hero-contact {
+    overflow-wrap: anywhere;
+  }
   .news-date {
     width: 90px;
     font-size: 0.85rem;
