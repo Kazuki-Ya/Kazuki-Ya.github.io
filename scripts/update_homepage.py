@@ -155,7 +155,10 @@ def news_html(entries, lang):
             kind = 'My first author paper' if first_author else 'Our paper'
             location = html.escape(news.get('location_en', ''))
             place = f' in {location}' if location else ''
-            text = f'{kind} "{title}" accepted at {venue}{place}.'
+            if news.get('topic_en'):
+                text = f'{kind} on {html.escape(news["topic_en"])} was accepted to {venue}{place}.'
+            else:
+                text = f'{kind} "{title}" was accepted to {venue}{place}.'
         else:
             date = f'{year}年{month}月'
             kind = '主著' if first_author else '共著'

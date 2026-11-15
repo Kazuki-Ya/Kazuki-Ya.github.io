@@ -28,11 +28,12 @@ Bundler は `bundle check` が成功する実行環境を選びます。明示�
 日付は採択を告知する月です。開催地は公式情報を確認して記入してください。
 
 ```tex
-% website-news: {"date": "2026-11", "location_en": "Athens, Greece", "location_ja": "アテネ🇬🇷"}
+% website-news: {"date": "2026-11", "topic_en": "how inversion affects LLM reading comprehension", "location_en": "Athens, Greece", "location_ja": "アテネ🇬🇷"}
 \publication{...}{...}{Findings of EACL 2027}{...}
 ```
 
 `date` は必須、ほかは省略できます。主著・共著は先頭の著者から判定します。
+`topic_en` を指定すると、英語Newsは長いタイトルの代わりに「Our paper on …」で紹介します。
 日英のトップとニュース一覧を更新し、既存の手動ニュースは残します。
 既存論文すべての採択ニュースを自動で追加することはありません。
 HTMLの `BEGIN CV` ～ `END CV` 内は生成領域なので、元の `main.tex` を修正してください。
