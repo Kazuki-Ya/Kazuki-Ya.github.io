@@ -147,7 +147,7 @@ def news_html(entries, lang):
         venue = entry['venue']
         venue = f'<strong>{venue}</strong>'
         title = entry['title']
-        if entry['url']:
+        if entry['url'] and urlparse(entry['url']).hostname != 'openreview.net':
             title = f'<a href="{url(entry["url"])}">{title}</a>'
         first_author = entry['authors'].startswith('<strong>Kazuki Yano</strong>')
         if lang == 'en':
