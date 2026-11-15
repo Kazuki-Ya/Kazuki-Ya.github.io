@@ -145,8 +145,6 @@ def news_html(entries, lang):
             raise ValueError('News date must be YYYY-MM')
         year, month = map(int, news['date'].split('-'))
         venue = entry['venue']
-        if news.get('conference_url'):
-            venue = f'<a href="{url(news["conference_url"])}">{venue}</a>'
         venue = f'<strong>{venue}</strong>'
         title = entry['title']
         if entry['url']:

@@ -28,7 +28,7 @@ Bundler は `bundle check` が成功する実行環境を選びます。明示�
 日付は採択を告知する月です。開催地は公式情報を確認して記入してください。
 
 ```tex
-% website-news: {"date": "2026-11", "location_en": "Athens, Greece", "location_ja": "アテネ🇬🇷", "conference_url": "https://2027.eacl.org/"}
+% website-news: {"date": "2026-11", "location_en": "Athens, Greece", "location_ja": "アテネ🇬🇷"}
 \publication{...}{...}{Findings of EACL 2027}{...}
 ```
 

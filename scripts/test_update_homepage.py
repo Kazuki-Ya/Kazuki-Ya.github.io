@@ -28,7 +28,7 @@ class SyncTests(unittest.TestCase):
                 lang = 'ja' if '/ja/' in str(path) else 'en'
                 content2 = sync.marked(content, 'NEWS', sync.news_html(entries, lang))
                 self.assertIn('Carnegie Mellon University', content)
-                self.assertEqual(content.count('https://2027.eacl.org/'), 1)
+                self.assertNotIn('https://2027.eacl.org/', content)
             self.assertEqual(content2, content)
 
     def test_missing_year_and_unsafe_url_fail(self):
