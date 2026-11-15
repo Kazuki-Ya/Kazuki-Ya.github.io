@@ -1,0 +1,169 @@
+% Compile with LuaLaTeX, XeLaTeX, or pdfLaTeX.
+\documentclass[a4paper,11pt]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \setmainfont{Latin Modern Roman}
+\fi
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{microtype,titlesec,enumitem,needspace,xcolor,fancyhdr,hyperref}
+\usepackage{ragged2e}
+\definecolor{linkcolor}{HTML}{164B73}
+\definecolor{muted}{HTML}{505050}
+\hypersetup{colorlinks=true,urlcolor=linkcolor,linkcolor=linkcolor,
+  pdftitle={Kazuki Yano - CV},pdfauthor={Kazuki Yano}}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{muted}Kazuki Yano}
+\fancyfoot[R]{\footnotesize\color{muted}\thepage}
+\setlength{\footskip}{20pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\setlist[itemize]{leftmargin=1.15em,label=\textbullet,topsep=2pt,
+  itemsep=0pt,parsep=0pt,partopsep=0pt}
+% Dates use only the first row. Descriptions get the full text width.
+% Each entry is kept together; line wrapping is left-aligned throughout.
+\newcommand{\roleline}[3]{%
+  \par\addvspace{5pt}\Needspace{4\baselineskip}%
+  \noindent\textbf{#1}\hfill\mbox{\small #3}\par\nobreak
+  {\itshape #2\par}\nobreak}
+\newcommand{\publication}[4]{%
+  \par\addvspace{5pt}%
+  \begin{minipage}{\linewidth}\RaggedRight
+    {\bfseries #1\par}
+    {\small #2\par}
+    {\small\textit{#3}\quad #4\par}
+  \end{minipage}\par}
+\newcommand{\award}[4]{%
+  \par\addvspace{4pt}%
+  \begin{minipage}{\linewidth}\RaggedRight
+    \textbf{#1}\hfill\mbox{#2}\par
+    {\small #3\par}
+    {\small\itshape #4\par}
+  \end{minipage}\par}
+\begin{document}
+\RaggedRight
+% Avoid word fragments such as "Ex- / pansion" at line endings.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\emergencystretch}{1em}
+\begin{center}
+  {\fontsize{26}{30}\selectfont\bfseries Kazuki Yano}\par
+  \vspace{5pt}
+  {\small
+  \href{mailto:yano.kazuki@dc.tohoku.ac.jp}{yano.kazuki@dc.tohoku.ac.jp}
+  \quad\textbar\quad
+  \href{https://kazuki-ya.github.io}{kazuki-ya.github.io}\par
+  \vspace{2pt}
+  \href{https://www.linkedin.com/in/kazuki-yano}{LinkedIn}
+  \quad\textbar\quad
+  \href{https://scholar.google.com/citations?user=KnttZUwAAAAJ&hl=en}{Google Scholar}}
+\end{center}
+\section{Summary}
+I am a second-year Ph.D. student at Tohoku University working on large language model pre-training, training dynamics, and efficient model scaling, with recent research on multimodal foundation models and adapting text LLMs to new modalities.
+I have first-author publications at leading venues including \textbf{ICLR 2026}, \textbf{INTERSPEECH 2026}, \textbf{COLM 2025}, and \textbf{NAACL 2025}.
+I have hands-on experience in end-to-end large-scale model training, including pre-training, post-training, and controlled analysis on high-performance compute clusters.
+
+\section{Education}
+\textbf{Tohoku University}\hfill\mbox{Sendai, Japan}\par
+\textbf{Ph.D. in Information Science} (expected)\hfill\mbox{2025 -- 2028}\par
+\textbf{M.S. in Information Science}\hfill\mbox{2023 -- 2025}\par
+{\small Supervisor for both degrees: \href{https://www.fai.cds.tohoku.ac.jp/members/js/}{Jun Suzuki}\par}
+\roleline{Carnegie Mellon University}{Visiting Scholar}{Oct 2026 -- Mar 2027}
+{\small WAVLab, Language Technologies Institute\par
+Advisor: \href{https://sw005320.github.io/}{Shinji Watanabe}\par}
+
+\section{Experience}
+\roleline{Amazon Japan G.K.}{Research Fellow}{Jun 2026 -- Sep 2026}
+\begin{itemize}
+\item Developed LLM-based personalized recommendation, including user persona modeling and candidate reranking.
+\end{itemize}
+\roleline{SB Intuitions}{Research Intern}{Nov 2024 -- May 2026}
+\begin{itemize}
+\item Conducted LLM development on a large compute cluster, spanning pre-training and post-training.
+\end{itemize}
+\roleline{Preferred Networks Inc.}{Research Intern}{Aug 2024 -- Mar 2025}
+\begin{itemize}
+\item Built synthetic-data pipelines for LLM training; evaluated continued pre-training (CPT) and supervised fine-tuning (SFT).
+\end{itemize}
+\roleline{Rakuten Group, Inc.}{Data Scientist (Part-time)}{Jul 2024 -- May 2025}
+\begin{itemize}
+\item Studied representation/activation steering for style control via inference-time interventions.
+\end{itemize}
+\roleline{LINE Corporation}{Research Intern}{Aug 2023 -- Sep 2023}
+\begin{itemize}
+\item Developed an efficient adversarial-prompt optimization method for safety stress-testing aligned dialogue LMs.
+\end{itemize}
+
+\section{Publications}
+% website-news: {"date": "2026-11", "location_en": "Athens, Greece", "location_ja": "アテネ🇬🇷", "conference_url": "https://2027.eacl.org/"}
+\publication{After the Predicate Comes the Phrase: How Inversion Affects LLM Reading Comprehension}
+{Sumika Tsuda, \textbf{Kazuki Yano}, Jun Suzuki, and Reina Akama}
+{Findings of EACL 2027}{\href{https://openreview.net/forum?id=wqGehzL9fy}{[Paper]}}
+\publication{Adapting Text LLMs to Speech via Multimodal Depth Up-Scaling}
+{\textbf{Kazuki Yano}, Jun Suzuki, and Shinji Watanabe}
+{INTERSPEECH 2026}{\href{https://arxiv.org/abs/2604.00489}{[Paper]}}
+\newpage
+\section{Publications (continued)}
+\publication{Pre-training LLM without Learning Rate Decay Enhances Supervised Fine-Tuning}
+{\textbf{Kazuki Yano}, Shun Kiyono, Sosuke Kobayashi, Sho Takase, and Jun Suzuki}
+{ICLR 2026}{\href{https://openreview.net/forum?id=JnebU2QLdH}{[Paper]}}
+\publication{TimeMachine-bench: A Benchmark on Evaluating Model's Capability on Repository-level Migration Tasks}
+{Ryo Fujii, Makoto Morishita, \textbf{Kazuki Yano}, and Jun Suzuki}
+{EACL 2026}{\href{https://aclanthology.org/2026.eacl-long.385/}{[Paper]}}
+\publication{Suppressing Final Layer Hidden State Jumps in Transformer Pretraining}
+{Keigo Shibata, \textbf{Kazuki Yano}, Ryosuke Takahashi, Wataru Ikeda, and Jun Suzuki}
+{Findings of EACL 2026}{\href{https://aclanthology.org/2026.findings-eacl.64/}{[Paper]}}
+\publication{Efficient Construction of Model Family through Progressive Training \mbox{Using Model Expansion}}
+{\textbf{Kazuki Yano}, Sho Takase, Sosuke Kobayashi, Shun Kiyono, and Jun Suzuki}
+{COLM 2025}{\href{https://openreview.net/forum?id=fuBrcTH8NM}{[Paper]}}
+\publication{Layer-wise Importance Analysis of Feed-Forward Networks in Transformer-based Language Models}
+{Wataru Ikeda, \textbf{Kazuki Yano}, Ryosuke Takahashi, Jaesung Lee, Keigo Shibata, and Jun Suzuki}
+{COLM 2025}{\href{https://openreview.net/forum?id=oP3b5YBFoP}{[Paper]}}
+\publication{STEP: Staged Parameter-Efficient Pre-training for Large Language Models}
+{\textbf{Kazuki Yano}, Takumi Ito, and Jun Suzuki}
+{NAACL 2025}{\href{https://aclanthology.org/2025.naacl-short.32/}{[Paper]}}
+\publication{Document-level Translation with LLM Reranking: Team-J at WMT 2024 General Translation Task}
+{Keito Kudo, Hiroyuki Deguchi, Makoto Morishita, Ryo Fujii, Takumi Ito, Shintaro Ozaki, Koki Natsumi, Kai Sato, \textbf{Kazuki Yano}, Ryosuke Takahashi, Subaru Kimura, Tomomasa Hara, Yusuke Sakai, and Jun Suzuki}
+{WMT 2024}{\href{https://aclanthology.org/2024.wmt-1.14/}{[Paper]}}
+\publication{STEP: Staged Parameter-Efficient Pre-training for Large Language Models}
+{\textbf{Kazuki Yano}, Takumi Ito, and Jun Suzuki}
+{ACL 2024 Student Research Workshop}{}
+
+\section{Honors and Awards}
+\award{Outstanding Paper Award}{2025}
+{The 31st Annual Meeting of the Association for Natural Language Processing (NLP 2025)}
+{Awarded to top 14 / 765 submissions}
+\award{BOOST Program for next-generation AI areas (JST)}{2025}
+{Broadening Opportunities for Outstanding young researchers and doctoral students in STrategic areas}
+{Research Fellow (subsidized by JST)}
+\award{Encouragement Award}{2025}
+{The 31st Annual Meeting of the Association for Natural Language Processing (NLP 2025)}
+{Awarded to top 20 / 487 eligible submissions}
+\award{Encouragement Award}{2024}
+{The 30th Annual Meeting of the Association for Natural Language Processing (NLP 2024)}
+{Awarded to top 18 / 427 eligible submissions}
+
+\section{Academic Activities}
+\textbf{Reviewer.}\quad ARR, TMLR, ICML (2026), NeurIPS (2026),
+ICASSP (2026, 2027), ICLR (2027).\par
+\smallskip
+\textbf{Talk.}\quad
+\href{https://www.wavlab.org/speech_lunch}
+{Expanding Language Models for Speech and Beyond}.\par
+{\small Speech Lunch, Carnegie Mellon University, Oct 8, 2026.\par}
+
+\section{Skills}
+\textbf{Tools.}\quad Python, PyTorch, distributed training, Linux, Git, Slurm, Docker/Singularity\par
+\smallskip
+\textbf{Languages.}\quad Japanese (native), English (professional working proficiency)
+\end{document}
